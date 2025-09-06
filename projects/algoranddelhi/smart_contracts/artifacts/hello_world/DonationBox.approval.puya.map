@@ -1,0 +1,560 @@
+{
+  "version": 3,
+  "sources": [
+    "C:/Users/ADMIN/algoranddelhi/projects/algoranddelhi/smart_contracts/hello_world/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAK8C;AAAuB;AAAnE;AAHF;;AAAA;;;AAAA;;;;;;;;;;;;AAAA;;;AAAA;;;;;;AAAA;;AAYE;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AANA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AANF;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAG8C;AAAA;AAAA;AAAA;AAIkB;;AAAhC;AAJc;AAI1C;AAAA;AACO;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAP;AAL0C;AAAA;AAAA;AAAA;AAU1C",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1"
+    },
+    "5": {
+      "op": "bytecblock \"total\" 0x151f7c75"
+    },
+    "18": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "reinterpret_bool%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bool%0#0"
+      ]
+    },
+    "20": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "23": {
+      "op": "bytec_0 // \"total\"",
+      "defined_out": [
+        "\"total\""
+      ],
+      "stack_out": [
+        "\"total\""
+      ]
+    },
+    "24": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"total\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"total\"",
+        "0"
+      ]
+    },
+    "25": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "26": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "28": {
+      "op": "bz main_bare_routing@9",
+      "stack_out": []
+    },
+    "31": {
+      "op": "pushbytess 0xbe3c278b 0x35f3f7de // method \"donate()string\", method \"checkTotal()uint64\"",
+      "defined_out": [
+        "Method(checkTotal()uint64)",
+        "Method(donate()string)"
+      ],
+      "stack_out": [
+        "Method(donate()string)",
+        "Method(checkTotal()uint64)"
+      ]
+    },
+    "43": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(checkTotal()uint64)",
+        "Method(donate()string)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(donate()string)",
+        "Method(checkTotal()uint64)",
+        "tmp%2#0"
+      ]
+    },
+    "46": {
+      "op": "match main_donate_route@5 main_checkTotal_route@6",
+      "stack_out": []
+    },
+    "52": {
+      "block": "main_after_if_else@13",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "53": {
+      "op": "return",
+      "stack_out": []
+    },
+    "54": {
+      "block": "main_checkTotal_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "56": {
+      "op": "!",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "57": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "58": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "60": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "61": {
+      "callsub": "smart_contracts/hello_world/contract.algo.ts::DonationBox.checkTotal",
+      "op": "callsub checkTotal",
+      "defined_out": [
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0"
+      ]
+    },
+    "64": {
+      "op": "itob",
+      "defined_out": [
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0"
+      ]
+    },
+    "65": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "66": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ]
+    },
+    "67": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "68": {
+      "op": "log",
+      "stack_out": []
+    },
+    "69": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "70": {
+      "op": "return",
+      "stack_out": []
+    },
+    "71": {
+      "block": "main_donate_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "73": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "74": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "75": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "77": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "78": {
+      "callsub": "smart_contracts/hello_world/contract.algo.ts::DonationBox.donate",
+      "op": "callsub donate",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "81": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ]
+    },
+    "82": {
+      "op": "len",
+      "defined_out": [
+        "length%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length%0#0"
+      ]
+    },
+    "83": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "84": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "87": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ]
+    },
+    "88": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0"
+      ]
+    },
+    "89": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "90": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ]
+    },
+    "91": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "92": {
+      "op": "log",
+      "stack_out": []
+    },
+    "93": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "94": {
+      "op": "return",
+      "stack_out": []
+    },
+    "95": {
+      "block": "main_bare_routing@9",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "97": {
+      "op": "bnz main_after_if_else@13",
+      "stack_out": []
+    },
+    "100": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "102": {
+      "op": "!",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "103": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "104": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "105": {
+      "op": "return",
+      "stack_out": []
+    },
+    "106": {
+      "subroutine": "smart_contracts/hello_world/contract.algo.ts::DonationBox.donate",
+      "params": {},
+      "block": "donate",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "107": {
+      "op": "bytec_0 // \"total\"",
+      "defined_out": [
+        "\"total\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"total\""
+      ]
+    },
+    "108": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "109": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "110": {
+      "op": "txn Amount",
+      "defined_out": [
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ]
+    },
+    "112": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0"
+      ]
+    },
+    "113": {
+      "op": "bytec_0 // \"total\"",
+      "stack_out": [
+        "new_state_value%0#0",
+        "\"total\""
+      ]
+    },
+    "114": {
+      "op": "swap",
+      "stack_out": [
+        "\"total\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "115": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "116": {
+      "op": "pushbytes \"Thanks for donating! \\xf0\\x9f\\x99\\x8f\"",
+      "defined_out": [
+        "\"Thanks for donating! \\xf0\\x9f\\x99\\x8f\""
+      ],
+      "stack_out": [
+        "\"Thanks for donating! \\xf0\\x9f\\x99\\x8f\""
+      ]
+    },
+    "143": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "144": {
+      "subroutine": "smart_contracts/hello_world/contract.algo.ts::DonationBox.checkTotal",
+      "params": {},
+      "block": "checkTotal",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "145": {
+      "op": "bytec_0 // \"total\"",
+      "defined_out": [
+        "\"total\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"total\""
+      ]
+    },
+    "146": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "147": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "148": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
