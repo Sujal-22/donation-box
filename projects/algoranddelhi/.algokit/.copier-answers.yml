@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 0.3.5
+_src_path: gh:algorandfoundation/algokit-typescript-template
+author_email: 157799236+Sujal-22@users.noreply.github.com
+author_name: Sujal kumar
+contract_name: hello_world
+preset_name: starter
+project_name: algoranddelhi
+
