@@ -1,3 +1,4 @@
+![WhatsApp Image 2025-09-06 at 16 34 26_b3b92bb3](https://github.com/user-attachments/assets/e4aaf37d-0ca1-44de-b21e-7de4ec7586e2)
 # algoranddelhi
 
 Welcome to your new AlgoKit project!
@@ -20,3 +21,4 @@ To get started execute:
 2. `algokit init` - invoke this command inside a github codespace to launch an interactive wizard to guide you through the process of creating a new AlgoKit project
 
 Powered by [Copier templates](https://copier.readthedocs.io/en/stable/).
+![WhatsApp Image 2025-09-06 at 16 34 26_b3b92bb3](https://github.com/user-attachments/assets/c82aa70e-123b-4d59-9d4a-115535b511d3)
